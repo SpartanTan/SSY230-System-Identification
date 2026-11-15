@@ -1,0 +1,94 @@
+[
+  {
+    "path": "freiburg/msi.pdf",
+    "url": "https://www.syscop.de/files/2025ws/MSI/msi.pdf",
+    "resolved_url": "https://www.syscop.de/files/2025ws/MSI/msi.pdf",
+    "bytes": 7150722,
+    "sha256": "7c98b5d4de0517ddf0f7da4d45925c10cd6628d8c4277753a34a1ed8834ae2f2",
+    "status": "downloaded"
+  },
+  {
+    "path": "freiburg/exercise4.pdf",
+    "url": "https://www.syscop.de/files/2025ws/MSI/exercise4.pdf",
+    "resolved_url": "https://www.syscop.de/files/2025ws/MSI/exercise4.pdf",
+    "bytes": 153067,
+    "sha256": "ed124c4b287e22246a80810b97f03e1ec886b36ff3055533ea22f3d8ae928a33",
+    "status": "downloaded"
+  },
+  {
+    "path": "freiburg/exercise6.pdf",
+    "url": "https://www.syscop.de/files/2025ws/MSI/exercise6.pdf",
+    "resolved_url": "https://www.syscop.de/files/2025ws/MSI/exercise6.pdf",
+    "bytes": 114840,
+    "sha256": "bbcfeab2f66a073f0a83fac8817eebaf1386a1ed139602448ad41028ccfbe284",
+    "status": "downloaded"
+  },
+  {
+    "path": "freiburg/exercise8.pdf",
+    "url": "https://www.syscop.de/files/2025ws/MSI/exercise8.pdf",
+    "resolved_url": "https://www.syscop.de/files/2025ws/MSI/exercise8.pdf",
+    "bytes": 245179,
+    "sha256": "ea89a78b21f11e2ef3154f51fd9100cdd6055c6cd2b0d6db0e6f030cc0a16cd6",
+    "status": "downloaded"
+  },
+  {
+    "path": "freiburg/exercise9.pdf",
+    "url": "https://www.syscop.de/files/2025ws/MSI/exercise9.pdf",
+    "resolved_url": "https://www.syscop.de/files/2025ws/MSI/exercise9.pdf",
+    "bytes": 165757,
+    "sha256": "a396074b549cfc607f67113179d8d7d80027be7d95a0ce84ff100e58e2cc48bc",
+    "status": "downloaded"
+  },
+  {
+    "path": "freiburg/exercise10.pdf",
+    "url": "https://www.syscop.de/files/2025ws/MSI/exercise10.pdf",
+    "resolved_url": "https://www.syscop.de/files/2025ws/MSI/exercise10.pdf",
+    "bytes": 189620,
+    "sha256": "a25af7125527acb50bf9b6cb0928ed75a947c51150af9aae2e2623eacd4240fe",
+    "status": "downloaded"
+  },
+  {
+    "path": "mit/linear_sysid.ipynb",
+    "url": "https://underactuated.mit.edu/sysid/exercises/linear_sysid.ipynb",
+    "resolved_url": "https://underactuated.mit.edu/sysid/exercises/linear_sysid.ipynb",
+    "bytes": 15170,
+    "sha256": "45658fd616e3bbe081c64ec85796091cfd0b0aa8aeb98d92276676777b2a4bc3",
+    "status": "downloaded"
+  },
+  {
+    "path": "mit/glider_sysid.ipynb",
+    "url": "https://underactuated.mit.edu/sysid/exercises/glider_sysid.ipynb",
+    "resolved_url": "https://underactuated.mit.edu/sysid/exercises/glider_sysid.ipynb",
+    "bytes": 34851,
+    "sha256": "3d0005995d986b78a19f1247ad4fc3add36f4d9c3c4218d43e4ae8833cb70185",
+    "status": "downloaded"
+  },
+  {
+    "path": "mit/sysid.ipynb",
+    "url": "https://underactuated.mit.edu/sysid/sysid.ipynb",
+    "resolved_url": "https://underactuated.mit.edu/sysid/sysid.ipynb",
+    "bytes": 45210,
+    "sha256": "4c3299baec93eb482fe3fd2fe0b17cf33e29dc9aecfe3eef935b62882f0c5aab",
+    "status": "downloaded"
+  },
+  {
+    "path": "cascaded_tanks/CascadedTanksFiles.zip",
+    "url": "https://data.4tu.nl/file/d4810b78-6cdd-48fe-8950-9bd601e5f47f/3b697e42-01a4-4979-a370-813a456c36f5",
+    "resolved_url": "https://data.4tu.nl/file/d4810b78-6cdd-48fe-8950-9bd601e5f47f/3b697e42-01a4-4979-a370-813a456c36f5",
+    "bytes": 7520592,
+    "sha256": "eb0fa05851e8a7136846c2e3b61fbef87def78d0852c86ab91b02ac5db541b51",
+    "status": "downloaded",
+    "license": "CC BY-SA 4.0",
+    "doi": "10.4121/12960104.v1"
+  },
+  {
+    "path": "cascaded_tanks/TanksBenchmark.pdf",
+    "url": "https://data.4tu.nl/file/d4810b78-6cdd-48fe-8950-9bd601e5f47f/767edeb4-c4fc-45f8-a287-f1b1bd920b57",
+    "resolved_url": "https://data.4tu.nl/file/d4810b78-6cdd-48fe-8950-9bd601e5f47f/767edeb4-c4fc-45f8-a287-f1b1bd920b57",
+    "bytes": 2169671,
+    "sha256": "91597add858efdec98cc1bfabd7b87867c5c3cb8a0ec10976ceed9acdee81b39",
+    "status": "downloaded",
+    "license": "CC BY-SA 4.0",
+    "doi": "10.4121/12960104.v1"
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "exercise1.mat": {
+    "u": {
+      "shape": [
+        300,
+        1
+      ],
+      "dtype": "int16",
+      "finite": true,
+      "min": -1.0,
+      "max": 1.0
+    },
+    "y": {
+      "shape": [
+        300,
+        1
+      ],
+      "dtype": "float64",
+      "finite": true,
+      "min": -11.234526252242553,
+      "max": 11.829052640757274
+    }
+  },
+  "exercise2.mat": {
+    "z1": {
+      "shape": [
+        200,
+        2
+      ],
+      "dtype": "float64",
+      "finite": true,
+      "min": -24.218951157628524,
+      "max": 27.75001879829891
+    },
+    "z2": {
+      "shape": [
+        200,
+        2
+      ],
+      "dtype": "float64",
+      "finite": true,
+      "min": -31.670702965514813,
+      "max": 16.433679093780793
+    }
+  }
+}

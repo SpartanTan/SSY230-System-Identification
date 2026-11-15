@@ -1,0 +1,296 @@
+[
+  {
+    "path": "EarlierExams/exam_210601_with_solutions.pdf",
+    "bytes": 189861,
+    "sha256": "7860222f473527e6023d357620c4ad4fe32c60183ef42b7bafe5ccc74c075685",
+    "pages": 10,
+    "title": ""
+  },
+  {
+    "path": "EarlierExams/tenta_200602_solutions.pdf",
+    "bytes": 296445,
+    "sha256": "aeadcc63aa60012cf5749fe1fc561bbd524bff09bcab16f6424c1683ed163cb3",
+    "pages": 8,
+    "title": ""
+  },
+  {
+    "path": "EarlierExams/tenta_220531_solution.pdf",
+    "bytes": 361006,
+    "sha256": "87697c25da0e5d98333dfae7d6a3ae9ac0a1164e24522ad367b1f33706677a78",
+    "pages": 9,
+    "title": ""
+  },
+  {
+    "path": "EarlierExams/tenta_230530_with_solutions.pdf",
+    "bytes": 289388,
+    "sha256": "8df10a671d78fd03c7e171c245d3d3281befd5a0a24db8adcda3325511afcf5c",
+    "pages": 8,
+    "title": ""
+  },
+  {
+    "path": "EarlierExams/tenta_240530.pdf",
+    "bytes": 215827,
+    "sha256": "5fae4905a3554552264f4f45ebc55293f7a9ccc60a2d5b798ee87c233b495da9",
+    "pages": 11,
+    "title": ""
+  },
+  {
+    "path": "EarlierExams/tenta_250603solutions.pdf",
+    "bytes": 356682,
+    "sha256": "71a410dbe68007f20d1ec7b3754bf0f5ea165646f78765ebef80fe116846565f",
+    "pages": 7,
+    "title": ""
+  },
+  {
+    "path": "ExercisesSolutions/adaptivety2referencefollowing_AdaptiveControl1.slx",
+    "bytes": 32384,
+    "sha256": "bd1babe41c56b220d15607f1255384ecbff7f09a4f0a7b410e06146c1cb4d378"
+  },
+  {
+    "path": "ExercisesSolutions/ec12_alternative_to_geometric_series.png",
+    "bytes": 208083,
+    "sha256": "14c55abb2dac13d20dd700fb3adf45d00bbbbb90ec2230bcae52ba13e851e2f9"
+  },
+  {
+    "path": "ExercisesSolutions/EC21.pdf",
+    "bytes": 221323,
+    "sha256": "ecf688f4f84436a039c3c501e8546f1a217a151f82e87857b7e4cc44233d66d7",
+    "pages": 1,
+    "title": ""
+  },
+  {
+    "path": "ExercisesSolutions/EC3.pdf",
+    "bytes": 844763,
+    "sha256": "eeac7c7df82e6cdf30764b989e5e1731e884276249b73caec9e45c26e3677778",
+    "pages": 3,
+    "title": ""
+  },
+  {
+    "path": "ExercisesSolutions/SSY230Problems.pdf",
+    "bytes": 632809,
+    "sha256": "5b9b607408b1666118a71b16804665a5f3e0ac7f75789273cfa39a9f966cd8fb",
+    "pages": 79,
+    "title": ""
+  },
+  {
+    "path": "Projects/MatlabFiles/chirpData.m",
+    "bytes": 335,
+    "sha256": "df039e50f3b178342debf61ad736be67eb6fa449004ac0434d51690a38b5242a"
+  },
+  {
+    "path": "Projects/MatlabFiles/exercise1.mat",
+    "bytes": 2695,
+    "sha256": "abe0ff09c001b137ecfdddf5d41b0fcdee44e452c7ab3aeabb4d4397dc308c59"
+  },
+  {
+    "path": "Projects/MatlabFiles/exercise2.mat",
+    "bytes": 6533,
+    "sha256": "a71bf1cf404f7f291f66031c95772d3939ff22d62c6040ebda5fc5341b15e775"
+  },
+  {
+    "path": "Projects/MatlabFiles/linearData.m",
+    "bytes": 562,
+    "sha256": "7bb29d9e9beb62f920b303b9468bd04f0a41fce50e306b92857cf8a458226358"
+  },
+  {
+    "path": "Projects/MatlabFiles/MonteCarloExample.m",
+    "bytes": 2256,
+    "sha256": "f64a837136affe1b587ddf173a92615083124f5d03d846c4e72dd2d46cf6e8ee"
+  },
+  {
+    "path": "Projects/MatlabFiles/poly_x2.m",
+    "bytes": 1366,
+    "sha256": "066749d318fa7482592685abf9104953533f9235222a8a69472bc21d04b6aa80"
+  },
+  {
+    "path": "Projects/MatlabFiles/polyData.m",
+    "bytes": 535,
+    "sha256": "9eeb3e55389906b1ac3b38f07da3fad5b10f5c4ffcc54df2f83a7336a09af2c6"
+  },
+  {
+    "path": "Projects/MatlabFiles/student_test_pr2.m",
+    "bytes": 1261,
+    "sha256": "509406b3d9837649917e48eab19b310c99c77375ded2476ee49cae0091254573"
+  },
+  {
+    "path": "Projects/MatlabFiles/tenDimData.m",
+    "bytes": 484,
+    "sha256": "a58419e1ec664d06d9ea4d4d3544e2b698a17a9899646668f0b2b4a52792b114"
+  },
+  {
+    "path": "Projects/MatlabFiles/Test_plotModel.m",
+    "bytes": 504,
+    "sha256": "31f249ad2c59a2fffdade24248778efbc37234dd7d99cb12d883b6a6be047738"
+  },
+  {
+    "path": "Projects/MatlabFiles/twoDimData1.m",
+    "bytes": 384,
+    "sha256": "f31be317641f077f58cffbdf4a0f77539652bebff88ee8b21ced081e1a6937aa"
+  },
+  {
+    "path": "Projects/MatlabFiles/twoDimData2.m",
+    "bytes": 315,
+    "sha256": "a6096a5e7aa74ef2a808ef5b767c8974ce238425b76a576e407619487967ea4c"
+  },
+  {
+    "path": "Projects/project_1.pdf",
+    "bytes": 240537,
+    "sha256": "642287ee08f4a95e72c0141211eca66172da5c043ac7e1dc9313f80dab661db6",
+    "pages": 10,
+    "title": ""
+  },
+  {
+    "path": "Projects/project_2.pdf",
+    "bytes": 288509,
+    "sha256": "356d234ab436d9774b502954f030d098e4bd4ee69c3a1ed728d792ecb101024c",
+    "pages": 4,
+    "title": ""
+  },
+  {
+    "path": "Projects/project_3.pdf",
+    "bytes": 89059,
+    "sha256": "8bb1d1757e664438f72c42b8159d3123bb6436a52639786de286ea1c26ea1b1d",
+    "pages": 2,
+    "title": ""
+  },
+  {
+    "path": "slides/introduction-handout.pdf",
+    "bytes": 4032472,
+    "sha256": "7bb99f0c9aa783fd6d36c8ef8c4d15d3e89875ab06021fbe609f995795bc71cd",
+    "pages": 29,
+    "title": ""
+  },
+  {
+    "path": "slides/lect1-present.pdf",
+    "bytes": 456777,
+    "sha256": "7db8bf9442c8cf62d27eaa80e045e13d274b09aca69f2fb194ef0ab8ac5cbb19",
+    "pages": 54,
+    "title": ""
+  },
+  {
+    "path": "slides/lect1.pdf",
+    "bytes": 302434,
+    "sha256": "e2538e8402ed37c39a597526bd204e1174dafeee73889214e29792490a1d33fd",
+    "pages": 25,
+    "title": ""
+  },
+  {
+    "path": "slides/lect10_State_space_Id_IV_methods_Handhouts.pdf",
+    "bytes": 390536,
+    "sha256": "40b44a7f133cbdc1b2fd22c6f65043e0561c90415db72abcd4a1a188224fc806",
+    "pages": 22,
+    "title": "State-Space Identification, Sub-space Methods &   Instrumental-Variable Methods"
+  },
+  {
+    "path": "slides/lect12_recurciveSI_handouts.pdf",
+    "bytes": 327733,
+    "sha256": "519e5a5ebd2a3af332b3b83dfdd2fd31c021ea8521d8aca4f0e14b7a93204645",
+    "pages": 19,
+    "title": "Real-Time Identification"
+  },
+  {
+    "path": "slides/lect13_adaptiveControl.pdf",
+    "bytes": 279165,
+    "sha256": "819b4447f7bf16515aec218b5409ad968e40c34ea39b12f30af56ff52a287924",
+    "pages": 23,
+    "title": "Adaptive Control – Theory and Applications"
+  },
+  {
+    "path": "slides/Lect13Neural Networks made simple.pdf",
+    "bytes": 4458918,
+    "sha256": "635f769eb8e389792982e85b85ddf172ced6c8705c5a2ef2a8c5c28ab4ca8071",
+    "pages": 55,
+    "title": "Neural Networks made simple.nb"
+  },
+  {
+    "path": "slides/lect14_Re-inforcement_Learning.pdf",
+    "bytes": 951483,
+    "sha256": "b5270c30c02a61ffa3be636dd696333d42bbb4721ea9934ac564aa7d47d459a8",
+    "pages": 10,
+    "title": "Microsoft PowerPoint - Re-inforcement_Learning.pptx"
+  },
+  {
+    "path": "slides/lect4nonparametric.pdf",
+    "bytes": 1128923,
+    "sha256": "8fd2df7a27d457fd59ea40c2c9b51c1ed4708e7dc119728201ca877b2a937b69",
+    "pages": 33,
+    "title": "Non-parametric Identification"
+  },
+  {
+    "path": "slides/lect5LinearRegression_handhout.pdf",
+    "bytes": 207670,
+    "sha256": "a3af8e1af8f96457b64240761174368e675034fd4f8af00f133799a8d3121d34",
+    "pages": 15,
+    "title": "Linear Regression"
+  },
+  {
+    "path": "slides/lect6LinearBlackBoxModels_handout.pdf",
+    "bytes": 1351299,
+    "sha256": "47bf4910d462d458cfa67a3a58e3d446144a44f76904d763397c58e66e4c2f20",
+    "pages": 23,
+    "title": "Linear Black-Box Models"
+  },
+  {
+    "path": "slides/lect7PredictingEstimate_PEM_handout.pdf",
+    "bytes": 476356,
+    "sha256": "e413174f320571435a57f9f16e256169c9110311d5296c94a4a38200286a727c",
+    "pages": 24,
+    "title": "Parameter Estimators: Prediction Error Methods, Maximum Likelihood"
+  },
+  {
+    "path": "slides/lect8ModelValidation_handouts.pdf",
+    "bytes": 823666,
+    "sha256": "c39ba3a7dfd02394a12ebd7b6093395d2f5e049f0b6f5b1758f0dc88cad4478a",
+    "pages": 19,
+    "title": "Model validation"
+  },
+  {
+    "path": "slides/lect9ExperimentalDesignData_ClosedLoopID_Handhouts.pdf",
+    "bytes": 2403881,
+    "sha256": "c34d1b4f6bbd80387318d75c4f2ff0be0aade49179d39fce59f963559267310f",
+    "pages": 103,
+    "title": "Experiment Design, Data Pre-Processing,   & Closed-Loop Identification"
+  },
+  {
+    "path": "slides/linear_regression-handout.pdf",
+    "bytes": 1643334,
+    "sha256": "315e12ffb7ba7d098fd1ff725e8b2e2623687bfba86458e1436f081279a45327",
+    "pages": 48,
+    "title": ""
+  },
+  {
+    "path": "slides/Ljung99_chap5.pdf",
+    "bytes": 9106155,
+    "sha256": "2f6eb7530fbb2163d205280a12331fea29ead01b3066864964ccd0e8f32c2b01",
+    "pages": 26,
+    "title": ""
+  },
+  {
+    "path": "slides/statistical_learning-handout.pdf",
+    "bytes": 836577,
+    "sha256": "252acb69d7b5b7603020fd28fa0211dbd87ee2c867d947e804000ffed6c936e5",
+    "pages": 30,
+    "title": ""
+  },
+  {
+    "path": "slides/SubSpace_ch10.pdf",
+    "bytes": 397845,
+    "sha256": "cb1ff293c758a7f4ece7dd9834b8c2958d464873a9d0489bc7157b7b65940838",
+    "pages": 10,
+    "title": "Sysid2011b"
+  },
+  {
+    "path": "slides/SubSpaceIdentificationTonyGustafsson.pdf",
+    "bytes": 141930,
+    "sha256": "40a0519601fb90a49d2b03a3b015cc008e24ba5d52ae5db7d84193cdb2bfb77d",
+    "pages": 6,
+    "title": "PII: S0005-1098(01)00153-4"
+  },
+  {
+    "path": "slides/System Identification - Soderstrom and Stoica (searchable).pdf",
+    "bytes": 27649481,
+    "sha256": "ffe19e4f1701cb7acf093cacf9375723901c8c0dfb43855edcaf3392aab630c3",
+    "pages": 646,
+    "title": ""
+  }
+]

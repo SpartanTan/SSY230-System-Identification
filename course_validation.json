@@ -1,0 +1,22 @@
+{
+  "checked_on": "2026-11-10",
+  "status": "passed",
+  "original_files_unchanged": 46,
+  "download_hashes_verified": 11,
+  "local_links_and_pdf_pages_verified": 254,
+  "weekly_tasks_with_specs": 24,
+  "exercise_index_entries": 43,
+  "synthetic_datasets_reproduced": 16,
+  "npz_mat_equivalence": true,
+  "raw_data_files_checked": 3,
+  "not_executed": [
+    "MATLAB projects",
+    "MIT notebooks",
+    "Simulink",
+    "real vehicle experiments"
+  ],
+  "mathjax_formulas_checked": 22,
+  "final_local_links_and_pdf_pages_verified": 258,
+  "markdown_documents": 8,
+  "cross_course_links_verified": true
+}

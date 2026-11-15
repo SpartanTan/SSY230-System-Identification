@@ -1,0 +1,762 @@
+{
+  "origin": "self-designed synthetic learning data, 2026-11-10",
+  "truth_policy": "truth fields for evaluation, not parameter fitting",
+  "datasets": [
+    {
+      "name": "resistance_train",
+      "description": {
+        "columns": {
+          "u": [
+            "current_A"
+          ],
+          "y": [
+            "voltage_V"
+          ],
+          "truth_theta": [
+            "resistance_ohm",
+            "offset_V"
+          ]
+        },
+        "kind": "synthetic heteroscedastic static regression"
+      },
+      "array_sha256": "216a40d9be81a60b6b19c20da52973e3c9c024815f2d5d61970521e79859c2b2",
+      "shapes": {
+        "u": [
+          180,
+          1
+        ],
+        "y": [
+          180,
+          1
+        ],
+        "noise_std": [
+          180
+        ],
+        "truth_theta": [
+          2
+        ],
+        "seed": []
+      }
+    },
+    {
+      "name": "rls_train",
+      "description": {
+        "time_unit": "normalized samples, not physical seconds",
+        "equation": "y[k]=a[k]*y[k-1]+b[k]*u[k-1]+e[k], std(e)=0.15"
+      },
+      "array_sha256": "1d2715cd629f62710b8a04422ff5918a9deeefdd5901fd300ab61dbd2c49ebfe",
+      "shapes": {
+        "u": [
+          800,
+          1
+        ],
+        "y": [
+          800,
+          1
+        ],
+        "truth_theta": [
+          800,
+          2
+        ],
+        "Ts": [],
+        "seed": []
+      }
+    },
+    {
+      "name": "differential_drive_train",
+      "description": {
+        "u": [
+          "omega_left_rad_s",
+          "omega_right_rad_s"
+        ],
+        "y": [
+          "px_m",
+          "py_m"
+        ],
+        "x": [
+          "px_m",
+          "py_m",
+          "yaw_rad"
+        ],
+        "theta": [
+          "R_left_m",
+          "R_right_m",
+          "full_track_m"
+        ],
+        "integration": "RK4, piecewise constant wheel speeds",
+        "kind": "synthetic Sheet-8-inspired replacement"
+      },
+      "array_sha256": "13e41f6cd7f2922dcc4f1f6e042747935c3af430817fa01e2ef2385a9fdc2419",
+      "shapes": {
+        "t": [
+          1200
+        ],
+        "u": [
+          1200,
+          2
+        ],
+        "y": [
+          1200,
+          2
+        ],
+        "truth_x": [
+          1200,
+          3
+        ],
+        "truth_theta": [
+          3
+        ],
+        "noise_std": [
+          2
+        ],
+        "x0": [
+          3
+        ],
+        "Ts": [],
+        "seed": []
+      }
+    },
+    {
+      "name": "differential_drive_degenerate",
+      "description": {
+        "u": [
+          "omega_left_rad_s",
+          "omega_right_rad_s"
+        ],
+        "y": [
+          "px_m",
+          "py_m"
+        ],
+        "x": [
+          "px_m",
+          "py_m",
+          "yaw_rad"
+        ],
+        "theta": [
+          "R_left_m",
+          "R_right_m",
+          "full_track_m"
+        ],
+        "integration": "RK4, piecewise constant wheel speeds",
+        "kind": "synthetic Sheet-8-inspired replacement"
+      },
+      "array_sha256": "de846c2d8f53e8b208b98a0ca4c8df95a03f30fb5e00963c7fbc5c7270982a67",
+      "shapes": {
+        "t": [
+          1200
+        ],
+        "u": [
+          1200,
+          2
+        ],
+        "y": [
+          1200,
+          2
+        ],
+        "truth_x": [
+          1200,
+          3
+        ],
+        "truth_theta": [
+          3
+        ],
+        "noise_std": [
+          2
+        ],
+        "x0": [
+          3
+        ],
+        "Ts": [],
+        "seed": []
+      }
+    },
+    {
+      "name": "two_state_kf_train",
+      "description": {
+        "x": [
+          "position_m",
+          "velocity_m_s"
+        ],
+        "u": [
+          "acceleration_m_s2"
+        ],
+        "y": [
+          "position_m"
+        ],
+        "noise": "per-step acceleration variance q, Q=q*g*g.T",
+        "kind": "self-designed 2-state KF, not official Sheet 9"
+      },
+      "array_sha256": "5927e28db0494add15ed6bbdfa4db94544a2c59f6cfedce0ef3fbc38e9285c6c",
+      "shapes": {
+        "t": [
+          600
+        ],
+        "u": [
+          600,
+          1
+        ],
+        "y": [
+          600,
+          1
+        ],
+        "truth_x": [
+          600,
+          2
+        ],
+        "A": [
+          2,
+          2
+        ],
+        "B": [
+          2,
+          1
+        ],
+        "g": [
+          2
+        ],
+        "C": [
+          1,
+          2
+        ],
+        "R": [],
+        "truth_q": [],
+        "x0": [
+          2
+        ],
+        "Ts": [],
+        "seed": []
+      }
+    },
+    {
+      "name": "torque_robot_train",
+      "description": {
+        "u": [
+          "torque_left_Nm",
+          "torque_right_Nm"
+        ],
+        "y": [
+          "px_m",
+          "py_m",
+          "omega_left_rad_s",
+          "omega_right_rad_s"
+        ],
+        "x": [
+          "px_m",
+          "py_m",
+          "yaw_rad",
+          "speed_m_s",
+          "yaw_rate_rad_s"
+        ],
+        "parameters": [
+          "m_kg",
+          "R_m",
+          "half_track_m",
+          "I_kg_m2",
+          "Iw_kg_m2"
+        ],
+        "integration": "Euler, discrete additive state noise after each step",
+        "kind": "synthetic Sheet-10-inspired replacement"
+      },
+      "array_sha256": "dac11050ac94ebb54f060f1fe2c82cf0732af519876d3905604d083fe162ab9b",
+      "shapes": {
+        "t": [
+          1200
+        ],
+        "u": [
+          1200,
+          2
+        ],
+        "y": [
+          1200,
+          4
+        ],
+        "truth_x": [
+          1200,
+          5
+        ],
+        "x0": [
+          5
+        ],
+        "Ts": [],
+        "physical_parameters": [
+          5
+        ],
+        "process_std_per_step": [
+          5
+        ],
+        "noise_std": [
+          4
+        ],
+        "seed": []
+      }
+    },
+    {
+      "name": "resistance_validation",
+      "description": {
+        "columns": {
+          "u": [
+            "current_A"
+          ],
+          "y": [
+            "voltage_V"
+          ],
+          "truth_theta": [
+            "resistance_ohm",
+            "offset_V"
+          ]
+        },
+        "kind": "synthetic heteroscedastic static regression"
+      },
+      "array_sha256": "368b27d4788738d10efcf598b4b3765b56b9d28eab54a3472abe19cf91ad045e",
+      "shapes": {
+        "u": [
+          180,
+          1
+        ],
+        "y": [
+          180,
+          1
+        ],
+        "noise_std": [
+          180
+        ],
+        "truth_theta": [
+          2
+        ],
+        "seed": []
+      }
+    },
+    {
+      "name": "rls_validation",
+      "description": {
+        "time_unit": "normalized samples, not physical seconds",
+        "equation": "y[k]=a[k]*y[k-1]+b[k]*u[k-1]+e[k], std(e)=0.15"
+      },
+      "array_sha256": "32fa766116c60d8746382eb266e86a4f26d5528d12291d368377689d3ee40944",
+      "shapes": {
+        "u": [
+          800,
+          1
+        ],
+        "y": [
+          800,
+          1
+        ],
+        "truth_theta": [
+          800,
+          2
+        ],
+        "Ts": [],
+        "seed": []
+      }
+    },
+    {
+      "name": "differential_drive_validation",
+      "description": {
+        "u": [
+          "omega_left_rad_s",
+          "omega_right_rad_s"
+        ],
+        "y": [
+          "px_m",
+          "py_m"
+        ],
+        "x": [
+          "px_m",
+          "py_m",
+          "yaw_rad"
+        ],
+        "theta": [
+          "R_left_m",
+          "R_right_m",
+          "full_track_m"
+        ],
+        "integration": "RK4, piecewise constant wheel speeds",
+        "kind": "synthetic Sheet-8-inspired replacement"
+      },
+      "array_sha256": "202f4850e55d25893c64f2e63bc0b5f26ff8705c35057c92df3d8600925e66a8",
+      "shapes": {
+        "t": [
+          1200
+        ],
+        "u": [
+          1200,
+          2
+        ],
+        "y": [
+          1200,
+          2
+        ],
+        "truth_x": [
+          1200,
+          3
+        ],
+        "truth_theta": [
+          3
+        ],
+        "noise_std": [
+          2
+        ],
+        "x0": [
+          3
+        ],
+        "Ts": [],
+        "seed": []
+      }
+    },
+    {
+      "name": "two_state_kf_validation",
+      "description": {
+        "x": [
+          "position_m",
+          "velocity_m_s"
+        ],
+        "u": [
+          "acceleration_m_s2"
+        ],
+        "y": [
+          "position_m"
+        ],
+        "noise": "per-step acceleration variance q, Q=q*g*g.T",
+        "kind": "self-designed 2-state KF, not official Sheet 9"
+      },
+      "array_sha256": "68b906c2be1b48cdc8213abbbef715ee5aa665316cd6698776efe575a884f347",
+      "shapes": {
+        "t": [
+          600
+        ],
+        "u": [
+          600,
+          1
+        ],
+        "y": [
+          600,
+          1
+        ],
+        "truth_x": [
+          600,
+          2
+        ],
+        "A": [
+          2,
+          2
+        ],
+        "B": [
+          2,
+          1
+        ],
+        "g": [
+          2
+        ],
+        "C": [
+          1,
+          2
+        ],
+        "R": [],
+        "truth_q": [],
+        "x0": [
+          2
+        ],
+        "Ts": [],
+        "seed": []
+      }
+    },
+    {
+      "name": "torque_robot_validation",
+      "description": {
+        "u": [
+          "torque_left_Nm",
+          "torque_right_Nm"
+        ],
+        "y": [
+          "px_m",
+          "py_m",
+          "omega_left_rad_s",
+          "omega_right_rad_s"
+        ],
+        "x": [
+          "px_m",
+          "py_m",
+          "yaw_rad",
+          "speed_m_s",
+          "yaw_rate_rad_s"
+        ],
+        "parameters": [
+          "m_kg",
+          "R_m",
+          "half_track_m",
+          "I_kg_m2",
+          "Iw_kg_m2"
+        ],
+        "integration": "Euler, discrete additive state noise after each step",
+        "kind": "synthetic Sheet-10-inspired replacement"
+      },
+      "array_sha256": "ae45361c71c1d59448259872fe28454c0e0a1bc4a764f53846db88d3b27d6997",
+      "shapes": {
+        "t": [
+          1200
+        ],
+        "u": [
+          1200,
+          2
+        ],
+        "y": [
+          1200,
+          4
+        ],
+        "truth_x": [
+          1200,
+          5
+        ],
+        "x0": [
+          5
+        ],
+        "Ts": [],
+        "physical_parameters": [
+          5
+        ],
+        "process_std_per_step": [
+          5
+        ],
+        "noise_std": [
+          4
+        ],
+        "seed": []
+      }
+    },
+    {
+      "name": "resistance_test",
+      "description": {
+        "columns": {
+          "u": [
+            "current_A"
+          ],
+          "y": [
+            "voltage_V"
+          ],
+          "truth_theta": [
+            "resistance_ohm",
+            "offset_V"
+          ]
+        },
+        "kind": "synthetic heteroscedastic static regression"
+      },
+      "array_sha256": "aff3b8f98d83d229b306a724b3701f7f5580d894435e7d0cc1b5ecf7b94f7cb3",
+      "shapes": {
+        "u": [
+          180,
+          1
+        ],
+        "y": [
+          180,
+          1
+        ],
+        "noise_std": [
+          180
+        ],
+        "truth_theta": [
+          2
+        ],
+        "seed": []
+      }
+    },
+    {
+      "name": "rls_test",
+      "description": {
+        "time_unit": "normalized samples, not physical seconds",
+        "equation": "y[k]=a[k]*y[k-1]+b[k]*u[k-1]+e[k], std(e)=0.15"
+      },
+      "array_sha256": "660b78b76774804cb35197f1b0983dc476395fb753af00b332438eac3580fdc5",
+      "shapes": {
+        "u": [
+          800,
+          1
+        ],
+        "y": [
+          800,
+          1
+        ],
+        "truth_theta": [
+          800,
+          2
+        ],
+        "Ts": [],
+        "seed": []
+      }
+    },
+    {
+      "name": "differential_drive_test",
+      "description": {
+        "u": [
+          "omega_left_rad_s",
+          "omega_right_rad_s"
+        ],
+        "y": [
+          "px_m",
+          "py_m"
+        ],
+        "x": [
+          "px_m",
+          "py_m",
+          "yaw_rad"
+        ],
+        "theta": [
+          "R_left_m",
+          "R_right_m",
+          "full_track_m"
+        ],
+        "integration": "RK4, piecewise constant wheel speeds",
+        "kind": "synthetic Sheet-8-inspired replacement"
+      },
+      "array_sha256": "27cf3a3677b155610392ff4d2cf6cacdfd730a3c441801b8d5ea29517430885d",
+      "shapes": {
+        "t": [
+          1200
+        ],
+        "u": [
+          1200,
+          2
+        ],
+        "y": [
+          1200,
+          2
+        ],
+        "truth_x": [
+          1200,
+          3
+        ],
+        "truth_theta": [
+          3
+        ],
+        "noise_std": [
+          2
+        ],
+        "x0": [
+          3
+        ],
+        "Ts": [],
+        "seed": []
+      }
+    },
+    {
+      "name": "two_state_kf_test",
+      "description": {
+        "x": [
+          "position_m",
+          "velocity_m_s"
+        ],
+        "u": [
+          "acceleration_m_s2"
+        ],
+        "y": [
+          "position_m"
+        ],
+        "noise": "per-step acceleration variance q, Q=q*g*g.T",
+        "kind": "self-designed 2-state KF, not official Sheet 9"
+      },
+      "array_sha256": "808157a88a718e175b59337e2749a621fb483f1e65405aa22db96caee4f4f3c6",
+      "shapes": {
+        "t": [
+          600
+        ],
+        "u": [
+          600,
+          1
+        ],
+        "y": [
+          600,
+          1
+        ],
+        "truth_x": [
+          600,
+          2
+        ],
+        "A": [
+          2,
+          2
+        ],
+        "B": [
+          2,
+          1
+        ],
+        "g": [
+          2
+        ],
+        "C": [
+          1,
+          2
+        ],
+        "R": [],
+        "truth_q": [],
+        "x0": [
+          2
+        ],
+        "Ts": [],
+        "seed": []
+      }
+    },
+    {
+      "name": "torque_robot_test",
+      "description": {
+        "u": [
+          "torque_left_Nm",
+          "torque_right_Nm"
+        ],
+        "y": [
+          "px_m",
+          "py_m",
+          "omega_left_rad_s",
+          "omega_right_rad_s"
+        ],
+        "x": [
+          "px_m",
+          "py_m",
+          "yaw_rad",
+          "speed_m_s",
+          "yaw_rate_rad_s"
+        ],
+        "parameters": [
+          "m_kg",
+          "R_m",
+          "half_track_m",
+          "I_kg_m2",
+          "Iw_kg_m2"
+        ],
+        "integration": "Euler, discrete additive state noise after each step",
+        "kind": "synthetic Sheet-10-inspired replacement"
+      },
+      "array_sha256": "ba9a9bffe0216d51ccee4e7f778f665e1a09f66867d4eb20c8d59a06a2b9a34b",
+      "shapes": {
+        "t": [
+          1200
+        ],
+        "u": [
+          1200,
+          2
+        ],
+        "y": [
+          1200,
+          4
+        ],
+        "truth_x": [
+          1200,
+          5
+        ],
+        "x0": [
+          5
+        ],
+        "Ts": [],
+        "physical_parameters": [
+          5
+        ],
+        "process_std_per_step": [
+          5
+        ],
+        "noise_std": [
+          4
+        ],
+        "seed": []
+      }
+    }
+  ]
+}
